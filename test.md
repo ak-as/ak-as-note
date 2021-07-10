@@ -8,7 +8,7 @@ TESTです。
 
 ### Sub Section 1.2
 
-テストです。
+[テストページ](./test/testmd)へ移動します。
 
 ### Sub Section 1.3
 
