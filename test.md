@@ -8,7 +8,7 @@ TESTです。
 
 ### Sub Section 1.2
 
-[テストページ](./test/test.md)へ移動します。
+[テストページ](./test/test.html)へ移動します。
 
 ### Sub Section 1.3
 
