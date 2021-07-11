@@ -2,10 +2,25 @@
 
 ※このページは [C# の歴史](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-version-history) を参考に自分の学習のために整理したものです。
 
+---
 ### C# バージョン 1.0
 
+* [クラス](https://docs.microsoft.com/ja-jp/dotnet/csharp/fundamentals/types/classes)
+* [構造体](https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/builtin-types/struct)
+* [インターフェイス](https://docs.microsoft.com/ja-jp/dotnet/csharp/fundamentals/types/interfaces)
+* [イベント](https://docs.microsoft.com/ja-jp/dotnet/csharp/events-overview)
+* [プロパティ](https://docs.microsoft.com/ja-jp/dotnet/csharp/properties)
+* [デリゲート](https://docs.microsoft.com/ja-jp/dotnet/csharp/delegates-overview)
+* [演算子および式](https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/operators/)
+* [ステートメント](https://docs.microsoft.com/ja-jp/dotnet/csharp/programming-guide/statements-expressions-operators/statements)
+* [属性](https://docs.microsoft.com/ja-jp/dotnet/csharp/programming-guide/concepts/attributes/)
+
+---
 ### C# バージョン 1.2
 
+省略
+
+---
 ### [C# バージョン 2.0](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-version-history#c-version-20)
 
 * [ジェネリック](https://docs.microsoft.com/ja-jp/dotnet/csharp/fundamentals/types/generics)
@@ -19,22 +34,32 @@
 * 静的クラス
 * デリゲート推論
 
+---
 ### C# バージョン 3.0
 
+---
 ### C# バージョン 4.0
 
+---
 ### C# バージョン 5.0
 
+---
 ### C# バージョン 6.0
 
+---
 ### C# バージョン 7.0
 
+---
 ### C# バージョン 7.1
 
+---
 ### C# バージョン 7.2
 
+---
 ### C# バージョン 7.3
 
+---
 ### C# バージョン 8.0
 
+---
 ### C# バージョン 9.0
