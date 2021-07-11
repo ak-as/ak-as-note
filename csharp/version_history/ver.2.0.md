@@ -31,3 +31,15 @@
 ### 共変性と反変性
 
 【参照元】[https://docs.microsoft.com/ja-jp/dotnet/csharp/programming-guide/concepts/covariance-contravariance/](https://docs.microsoft.com/ja-jp/dotnet/csharp/programming-guide/concepts/covariance-contravariance/)
+
+---
+### ゲッター/セッター別のアクセシビリティ
+
+---
+### メソッド グループの変換 (デリゲート)
+
+---
+### 静的クラス
+
+---
+### デリゲート推論
