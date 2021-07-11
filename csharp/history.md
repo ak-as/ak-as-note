@@ -65,23 +65,23 @@
 
 #### 新機能
 
-* 非同期メンバー
-* 呼び出し元情報属性
+* [非同期メンバー](https://docs.microsoft.com/ja-jp/dotnet/csharp/async)
+* [呼び出し元情報属性](https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/attributes/caller-information)
 
 #### 関連項目
 
-* コード プロジェクト:C# 5.0 の呼び出し元情報属性
+* [コード プロジェクト:C# 5.0 の呼び出し元情報属性](https://www.codeproject.com/Tips/606379/Caller-Info-Attributes-in-Csharp)
 
 ---
 ### [C# バージョン 6.0](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-version-history#c-version-60)
 
-* 静的インポート
-* 例外フィルター
-* 自動プロパティ初期化子
-* 式形式のメンバー
-* Null 伝達子
-* 文字列補間
-* nameof 演算子
+* [静的インポート](https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/keywords/using-static)
+* [例外フィルター](https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/keywords/when)
+* [自動プロパティ初期化子](https://docs.microsoft.com/ja-jp/dotnet/csharp/properties)
+* [式形式のメンバー](https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition)
+* [Null 伝達子](https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-)
+* [文字列補間](https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/tokens/interpolated)
+* [nameof 演算子](https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/operators/nameof)
 * インデックス初期化子
 * Catch/Finally ブロックでの Await
 * ゲッターのみのプロパティの既定値
@@ -89,43 +89,43 @@
 ---
 ### [C# バージョン 7.0](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-version-history#c-version-70)
 
-* out 変数
-* タプルと分解
-* パターン マッチング
-* ローカル関数
-* 拡張された式形式のメンバー
-* ref ローカル変数と戻り値
-* 破棄
-* バイナリ リテラルと桁区切り文字
-* throw 式
+* [out 変数](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#out-variables)
+* [タプルと分解](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#tuples-and-discards)
+* [パターン マッチング](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#pattern-matching)
+* [ローカル関数](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#local-functions)
+* [拡張された式形式のメンバー](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#more-expression-bodied-members)
+* [ref ローカル変数と戻り値](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#ref-locals-and-returns)
+* [破棄](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#tuples-and-discards)
+* [バイナリ リテラルと桁区切り文字](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#numeric-literal-syntax-improvements)
+* [throw 式](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#throw-expressions)
 
 ---
 ### [C# バージョン 7.1](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-version-history#c-version-71)
 
-* async Mainメソッド
-* default リテラル式
-* 推論されたタプル要素の名前
-* ジェネリック型パラメーターのパターン マッチ
+* [async Mainメソッド](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#async-main)
+* [default リテラル式](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#default-literal-expressions)
+* [推論されたタプル要素の名前](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#tuples-and-discards)
+* [ジェネリック型パラメーターのパターン マッチ](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#pattern-matching)
 
 ---
 ### [C# バージョン 7.2](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-version-history#c-version-72)
 
-* 安全で効率的なコードを記述するための手法
-* 末尾以外の名前付き引数
-* 数値リテラルでの先頭のアンダースコア (_)
-* private protected アクセス修飾子
-* 条件付きの ref 式
+* [安全で効率的なコードを記述するための手法](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#enabling-more-efficient-safe-code)
+* [末尾以外の名前付き引数](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#non-trailing-named-arguments)
+* [数値リテラルでの先頭のアンダースコア (_)](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#numeric-literal-syntax-improvements)
+* [private protected アクセス修飾子](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#private-protected-access-modifier)
+* [条件付きの ref 式](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#conditional-ref-expressions)
 
 ---
 ### [C# バージョン 7.3](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-version-history#c-version-73)
 
 #### 新機能
 
-* ピン留めを使用せずに fixed フィールドにアクセスできます。
-* ref ローカル変数を再割り当てできます。
-* stackalloc 配列で初期化子を使用できます。
-* パターンをサポートする型と共に fixed ステートメントを使用できます。
-* より汎用的な制約を使用できます。
+* [ピン留めを使用せずに fixed フィールドにアクセスできます。](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#indexing-fixed-fields-does-not-require-pinning)
+* [ref ローカル変数を再割り当てできます。](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#enabling-more-efficient-safe-code)
+* [stackalloc 配列で初期化子を使用できます。](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#stackalloc-arrays-support-initializers)
+* [パターンをサポートする型と共に fixed ステートメントを使用できます。](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#more-types-support-the-fixed-statement)
+* [より汎用的な制約を使用できます。](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-7#enhanced-generic-constraints)
 
 #### 既存機能の強化
 
@@ -143,23 +143,23 @@
 ---
 ### [C# バージョン 8.0](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-version-history#c-version-80)
 
-* 読み取り専用メンバー
-* 既定のインターフェイス メソッド
-* パターン マッチングの拡張機能:
-    * switch 式
-    * プロパティのパターン
-    * タプル パターン
-    * 位置指定パターン
-* using 宣言
-* 静的ローカル関数
-* 破棄可能な ref 構造体
-* Null 許容参照型
-* 非同期ストリーム
-* インデックスと範囲
-* null 合体割り当て
-* 構築されたアンマネージド型
-* 入れ子になった式の stackalloc
-* verbatim 補間文字列の拡張
+* [読み取り専用メンバー](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-8#readonly-members)
+* [既定のインターフェイス メソッド](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-8#default-interface-methods)
+* [パターン マッチングの拡張機能:](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-8#more-patterns-in-more-places)
+    * [switch 式](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-8#switch-expressions)
+    * [プロパティのパターン](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-8#property-patterns)
+    * [タプル パターン](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-8#tuple-patterns)
+    * [位置指定パターン](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-8#positional-patterns)
+* [using 宣言](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-8#using-declarations)
+* [静的ローカル関数](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-8#static-local-functions)
+* [破棄可能な ref 構造体](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-8#disposable-ref-structs)
+* [Null 許容参照型](https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/builtin-types/nullable-reference-types)
+* [非同期ストリーム](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-8#asynchronous-streams)
+* [インデックスと範囲](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-8#indices-and-ranges)
+* [null 合体割り当て](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-8#null-coalescing-assignment)
+* [構築されたアンマネージド型](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-8#unmanaged-constructed-types)
+* [入れ子になった式の stackalloc](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-8#stackalloc-in-nested-expressions)
+* [verbatim 補間文字列の拡張](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-8#enhancement-of-interpolated-verbatim-strings)
 
 ---
 ### [C# バージョン 9.0](https://docs.microsoft.com/ja-jp/dotnet/csharp/whats-new/csharp-version-history#c-version-90)
