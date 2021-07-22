@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="Shift_JIS" standalone="yes"?>
+<package>
+<job id="main">
+
+	<runtime>
+		<description>各シートの設定</description>
+
+		<named name="v" type="string" required="false" helpstring="" />
+		<named name="z" type="string" required="false" helpstring="" />
+		<named name="sr" type="string" required="false" helpstring="" />
+		<named name="sc" type="string" required="false" helpstring="" />
+		<named name="ac" type="string" required="false" helpstring="" />
+		<named name="as" type="string" required="false" helpstring="" />
+		<unnamed name="ブック名" many="false" required="false" helpstring="本文を格納したテキストファイル" />
+
+		<example>
+例 :
+
+xl /v:normal /z:100 /sr:1 /sc:1 /ac:A1 /as:First Book1.xlsx</example>
+	</runtime>
+
+	<script language="JScript">
+	<![CDATA[
+
+		//WScript.Arguments.ShowUsage();
+
+	]]>
+	</script>
+
+	<script language="VBScript">
+	<![CDATA[
+
+		Class AppOptions
+
+			Public View
+
+			Public Zoom
+
+			Public ScrollRow
+
+			Public ScrollColumn
+
+			Public ActiveCell
+
+			Public ActiveSheet
+
+			Public Target
+
+		End Class
+
+		Function Main()
+
+			Dim Options, App, Book, Sheet, ActiveSheet
+
+			Set Options = CreateOptions()
+
+			If Options Is Nothing Then
+				Main = -1
+				Exit Function
+			End If
+
+			Set App = GetObject(, "Excel.Application")
+
+			If IsEmpty(Options.Target) Then
+				Set Book = App.ActiveWorkbook
+			Else
+				Set Book = App.Workbooks(Options.Target)
+			End If
+
+			If IsEmpty(Options.ActiveSheet) Then
+				Set ActiveSheet = Book.ActiveSheet
+			Else
+				Set ActiveSheet = Book.Worksheets(Options.ActiveSheet)
+			End If
+
+			For Each Sheet In Book.Worksheets
+				If Sheet.Visible Then
+
+					Call Sheet.Select()
+
+					If Not IsEmpty(Options.ActiveCell) Then
+						Call Sheet.Range(Options.ActiveCell).Select()
+					End If
+
+					If Not IsEmpty(Options.View) Then
+						Book.Windows(1).View = Options.View
+					End If
+
+					If Not IsEmpty(Options.Zoom) Then
+						Book.Windows(1).Zoom = Options.Zoom
+					End If
+
+					If Not IsEmpty(Options.ScrollRow) Then
+						Book.Windows(1).ScrollRow = Options.ScrollRow
+					End If
+
+					If Not IsEmpty(Options.ScrollColumn) Then
+						Book.Windows(1).ScrollColumn = Options.ScrollColumn
+					End If
+
+				End If
+			Next
+
+			Call ActiveSheet.Select()
+
+		End Function
+
+		Function CreateOptions()
+
+			Dim Options, Value
+
+			Set CreateOptions = Nothing
+
+			Set Options = New AppOptions
+
+			Value = WScript.Arguments.Named("v")
+
+			If Not IsEmpty(Value) Then
+				Select Case LCase(Value)
+				Case "normal"
+					Options.View = 1
+				Case "preview"
+					Options.View = 2
+				Case "layout"
+					Options.View = 3
+				Case Else
+					Call WScript.StdErr.WriteLine("v")
+					Exit Function
+				End Select
+			End If
+
+			Value = WScript.Arguments.Named("z")
+
+			If Not IsEmpty(Value) Then
+				If IsNumeric(Value) Then
+					Options.Zoom = CLng(Value)
+				Else
+					Call WScript.StdErr.WriteLine("z")
+					Exit Function
+				End If
+			End If
+
+			Value = WScript.Arguments.Named("sr")
+
+			If Not IsEmpty(Value) Then
+				If IsNumeric(Value) Then
+					Options.ScrollRow = CLng(Value)
+				Else
+					Call WScript.StdErr.WriteLine("sr")
+					Exit Function
+				End If
+			End If
+
+			Value = WScript.Arguments.Named("sc")
+
+			If Not IsEmpty(Value) Then
+				If IsNumeric(Value) Then
+					Options.ScrollColumn = CLng(Value)
+				Else
+					Call WScript.StdErr.WriteLine("sc")
+					Exit Function
+				End If
+			End If
+
+			Value = WScript.Arguments.Named("ac")
+
+			If Not IsEmpty(Value) Then
+				Options.ActiveCell = Value
+			End If
+
+			Value = WScript.Arguments.Named("as")
+
+			If Not IsEmpty(Value) Then
+				Options.ActiveSheet = Value
+			End If
+
+			If WScript.Arguments.UnNamed.Count > 0 Then
+				Options.Target = WScript.Arguments.UnNamed(0)
+			End If
+
+			Set CreateOptions = Options
+
+		End Function
+
+		Call Main()
+	]]>
+	</script>
+
+</job>
+</package>
