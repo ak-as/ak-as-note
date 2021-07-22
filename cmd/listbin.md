@@ -4,10 +4,6 @@
 
 バッチファイルを配置しているbinディレクトリ内の実行ファイルやバッチファイル等の一覧表示する。
 
-## Code
-
-[!INCLUDE [listbin.bat](./listbin.bat)]
-
 ## コード
 
     @echo off
