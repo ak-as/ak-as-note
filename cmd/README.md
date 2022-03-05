@@ -6,4 +6,4 @@
 
 3. [xl.bat / xl.wsf](./xl/)
 
-[戻る](../readme.md)
+[戻る](../README.md)
